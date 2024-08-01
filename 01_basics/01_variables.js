@@ -1,22 +1,14 @@
-const accountId = 144553
-let accountEmail = "hitesh@google.com"
-var accountPassword = "12345"
-accountCity = "Jaipur"
-let accountState;
+const accountId = 12456 // It is a variable whose value cannot be changed
+let accountEmail = "hy@bc.com"
+var accountPassword = "123456"
+accountCity = "Jaipur" // can be declared without a variable type but not preferred
 
-// accountId = 2 // not allowed
-
-
-accountEmail = "hc@hc.com"
-accountPassword = "21212121"
-accountCity = "Bengaluru"
-
-console.log(accountId);
+let accountState; // ye undefined dikhayega if we log this
 
 /*
-Prefer not to use var
-because of issue in block scope and functional scope
+prefer not to use var
+because of the issue in block scope and variable scope
 */
 
-
-console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
+console.log(accountId)
+console.table([accountEmail, accountPassword, accountCity]);
