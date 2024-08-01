@@ -3,13 +3,13 @@ let score = "hitesh"
 //console.log(typeof score);
 //console.log(typeof(score));
 
-let valueInNumber = Number(score)
+let valueInNumber = Number(score)  // used to convert one datatype to other
 //console.log(typeof valueInNumber);
 //console.log(valueInNumber);
 
 
 // "33" => 33
-// "33abc" => NaN
+// "33abc" => NaN type of NaN(Not a Number) is a number
 //  true => 1; false => 0
 
 let isLoggedIn = "hitesh"
@@ -36,7 +36,7 @@ let negValue = -value
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-// console.log(2**3);
+// console.log(2**3); this gives 2 raised to the power 3
 // console.log(2/3);
 // console.log(2%3);
 
@@ -46,10 +46,10 @@ let str2 = " hitesh"
 let str3 = str1 + str2
 // console.log(str3);
 
-// console.log("1" + 2);
+// console.log("1" + 2); agar string pehle h to sbko string m change kr denge
 // console.log(1 + "2");
 // console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log(1 + 2 + "2"); agar number pehle th to pehle unka operation hoga fir string ko add kra jayega
 
 // console.log( (3 + 4) * 5 % 3);
 
