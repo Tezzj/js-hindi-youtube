@@ -54,3 +54,44 @@ Return type of variables in JavaScript
        Function  =>  function
        Object  =>  object
 */
+
+
+/*
+There are basically two types of memories: stack and heap.
+All primitive datatypes are stored in stack memory and non primitive are stored in heap memory.
+*/
+
+let myName = "tejanshu"
+let ytName = myName       // ytName m myName ki copy di jaati h. So any change in ytName will not affect myName.
+
+ytName = "tezz"
+
+console.log(myName) // output is tejanshu
+console.log(ytName) // output is tezz
+
+let userOne = {
+    email: "abc@abc.com"
+    upi: "user@ybl"
+}
+
+let userTwo = userOne     // userTwo m userOne ka reference(address) copy hua h so userTwo m change krenge to wo userOne m bhi ho jayega
+userTwo.email = "def@abc.com"
+
+
+console.log(userOne.email)   // values of object can be accessed using dot function    // output is def@abc.com
+console.log(userTwo.email)  // output is def@abc.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
