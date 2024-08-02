@@ -1,5 +1,5 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+// const tinderUser = new Object()  // this is a singleton object
+const tinderUser = {}               // this is not a singleton object
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
@@ -24,9 +24,10 @@ const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
 // const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+// syntax: Object.assign(target, source)
+// const obj3 = Object.assign({}, obj1, obj2, obj4)      //It returns a modified target object. An empty object is also given in the parameter as a target object.
 
-const obj3 = {...obj1, ...obj2}
+const obj3 = {...obj1, ...obj2}            // using spread operator to combine the objects.
 // console.log(obj3);
 
 
@@ -48,11 +49,11 @@ const users = [
 users[1].email
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser));      // This will give an array of the keys of the object. IT'S IMPORTANT
 // console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));   // This gives an array, with it's key and value pair in a sub array
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //To check if an object has a property
 
 
 const course = {
