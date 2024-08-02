@@ -23,6 +23,8 @@ const temperature = 41
 
 // const balance = 1000
 
+// if (balance > 500) console.log("test");   // This is called implicit scope, as the code was of single line, so {} is not required. The scope is implicit
+
 // if (balance > 500) console.log("test"),console.log("test2");
 
 // if (balance < 500) {
