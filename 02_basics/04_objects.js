@@ -64,18 +64,20 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course  
+// this extracts the value from the object. By this, we can access tha value without using dot operation and by directly writing the key name. 
+// We can also call the key value by other name, by writing it after the colon. 
 
-// console.log(courseInstructor);
+// console.log(courseInstructor); 
 console.log(instructor);
-
-// {
+ 
+// {                              // thiis is a json. It is also an object. It is usually a response of an API
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
 //     "price": "free"
 // }
 
-[
+[                                  // we can also get an array of objects as an API response.
     {},
     {},
     {}
