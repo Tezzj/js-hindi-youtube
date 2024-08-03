@@ -6,11 +6,11 @@ if (userEmail) {
     console.log("Don't have user email");
 }
 
-// falsy values
+// falsy values - values which are assumed to be false
 
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
-//truthy values
+//truthy values - values which are assumed to be true
 // "0", 'false', " ", [], {}, function(){}
 
 // if (userEmail.length === 0) {
@@ -19,7 +19,7 @@ if (userEmail) {
 
 const emptyObj = {}
 
-if (Object.keys(emptyObj).length === 0) {
+if (Object.keys(emptyObj).length === 0) {         // we had to check if object is empty or not. So we checked the length of the array using Object.keys, which gives an array of keys.
     console.log("Object is empty");
 }
 
