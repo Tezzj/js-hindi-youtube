@@ -3,16 +3,18 @@
 
 // const values = coding.forEach( (item) => {
 //     //console.log(item);
-//     return item                                 // Foreach doesn't return any value
+//     return item                                         // Foreach doesn't return any value
 // } )
 
 // console.log(values);
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+//++++++++++++++++++++++++++++++++FILTER FUNCTION+++++++++++++++++++++++++++++
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // } )
+// output is: [5, 6, 7, 8, 9, 10]
 
 // const newNums = []
 
@@ -25,6 +27,8 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // console.log(newNums);
 
 
+
+// Sample database of books is given
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
@@ -38,8 +42,9 @@ const books = [
   ];
 
   let userBooks = books.filter( (bk) => bk.genre === 'History')
+  //we passed bk which represents an object in books array, and returns the objects with history genre
 
-  userBooks = books.filter( (bk) => { 
+  userBooks = books.filter( (bk) => {                          
     return bk.publish >= 1995 && bk.genre === "History"
 })
   console.log(userBooks);
