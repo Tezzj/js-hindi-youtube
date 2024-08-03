@@ -1,4 +1,4 @@
-// for of
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++FOR OF LOOP++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
 
 // ["", "", ""]
 // [{}, {}, {}]
@@ -32,7 +32,7 @@ Each char is !
 
 // Maps
 
-const map = new Map()       //Map is an object with many mmethods. It also holds the key value pairs and remembers the original insertion order of keys 
+const map = new Map()       //Map is an object with many methods. It also holds the key value pairs and remembers the original insertion order of keys 
 map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('Fr', "France")
