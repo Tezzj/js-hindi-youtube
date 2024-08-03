@@ -3,7 +3,7 @@
 
 // const values = coding.forEach( (item) => {
 //     //console.log(item);
-//     return item
+//     return item                                 // Foreach doesn't return any value
 // } )
 
 // console.log(values);
