@@ -1,3 +1,4 @@
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++FOR EACH LOOP(higher order function)++++++++++++++++++++++++++++++++++++++++++++++++++++++=
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach( function (val){         // the function here is a callback function which is taking the array values as the parameter
