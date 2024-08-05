@@ -14,13 +14,13 @@
     console.log(div);
     div.className = "main"
     div.id = Math.round(Math.random() * 10 + 1)
-    div.setAttribute("title", "generated title")
+    div.setAttribute("title", "generated title")         // It directly sets the attribute without bringing the reference
     div.style.backgroundColor = "green"
     div.style.padding = "12px"
-    // div.innerText = "Chai aur code"
-    const addText = document.createTextNode("Chai aur code")
-    div.appendChild(addText)
-
-    document.body.appendChild(div)
+    // div.innerText = "Chai aur code"                   // It takes 2 rounds to do this. First, it brings the reference and then sets it.
+    const addText = document.createTextNode("Chai aur code")      // It creates a text node (text to be put inside the div element)
+    div.appendChild(addText)                                     // It adds the child element to the parent element
+ 
+    document.body.appendChild(div)                               // It adds the created div element to the body. It will then get displayed on the browser
 </script>
 </html>
