@@ -35,10 +35,10 @@ undefined
 document.getElementById("title").className
 'heading'
 
-document.getElementById("title").getAttribute("id")
+document.getElementById("title").getAttribute("id")     It will get the attributes of an element with the given id
 'title'
 
-document.getElementById("title").getAttribute("class")
+document.getElementById("title").getAttribute("class")     getAttribute can NOT be used with getElementsbyClassName
 'heading'
 
 document.getElementById("title").setAttribute("class", "test")                            this will overwrite the existing class by test.
@@ -128,6 +128,29 @@ tempLiList.forEach((l) => {
     l.style.backgroundColor = "blue"                    It will convert all list item's background to blue
 })
 
+
+
+
+document.getElementsByClassName("list-item")
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+
+const tempClassList = document.getElementsByClassName("list-item") 
+undefined
+
+tempClassList.forEach(function(li) {})               It is not an array. So it DOESN'T use forEach function. We have to convert it into an array before using it
+Uncaught TypeError: tempClassList.forEach is not a function
+
+
+Array.from(tempClassList)                                       Converted the HTML collection into an array
+(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+
+const myConvertedArray = Array.from(tempClassList)
+undefined
+
+myConvertedArray.forEach((li) => {
+    li.style.color = "orange"
+})
+   
 
 
 
