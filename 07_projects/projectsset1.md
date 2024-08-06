@@ -14,9 +14,9 @@ const body = document.querySelector('body');
 
 buttons.forEach(function (button) {
   console.log(button);
-  button.addEventListener('click', function (e) {
+  button.addEventListener('click', function (e) {  // This adds an event listener which listens for the given event, and executes a function when the event occurs.
     console.log(e);
-    console.log(e.target);
+    console.log(e.target);           // This tells the target on which the event has occured
     if (e.target.id === 'grey') {
       body.style.backgroundColor = e.target.id;
     }
