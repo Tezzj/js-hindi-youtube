@@ -14,7 +14,8 @@
 <script>
     function addLanguage(langName){
         const li = document.createElement('li');
-        li.innerHTML = `${langName}`
+        li.innerHTML = `${langName}`            
+        // This traverses the whole tree till it adds the text after the last li element. Takes time when there is a large no. of li elements
         document.querySelector('.language').appendChild(li)
     }
     addLanguage("python")
@@ -28,7 +29,7 @@
     addOptiLanguage('golang')
 
     //Edit
-    const secondLang = document.querySelector("li:nth-child(2)")
+    const secondLang = document.querySelector("li:nth-child(2)")    // used to select the nth child element
     console.log(secondLang);
     //secondLang.innerHTML = "Mojo"
     const newli = document.createElement('li')
@@ -39,7 +40,7 @@
     const firstLang = document.querySelector("li:first-child")
     firstLang.outerHTML = '<li>TypeScript</li>'
 
-    //remove
+    //removing the selected element
     const lastLang = document.querySelector('li:last-child')
     lastLang.remove()
 
