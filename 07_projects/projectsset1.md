@@ -44,9 +44,9 @@ const form = document.querySelector('form');
 // const height = parseInt(document.querySelector('#height').value)
 
 form.addEventListener('submit', function (e) {
-  e.preventDefault();
+  e.preventDefault();      //It stops the the form from submitting and sending the data to the server
 
-  const height = parseInt(document.querySelector('#height').value);
+  const height = parseInt(document.querySelector('#height').value);       //parseInt converts a datatype into an int
   const weight = parseInt(document.querySelector('#weight').value);
   const results = document.querySelector('#results');
 
@@ -70,7 +70,7 @@ form.addEventListener('submit', function (e) {
 const clock = document.getElementById('clock');
 // const clock = document.querySelector('#clock')
 
-setInterval(function () {
+setInterval(function () {                                          //stInterval controls the js events. It takes a function and a time interval, after which the function executes regularly
   let date = new Date();
   // console.log(date.toLocaleTimeString());
   clock.innerHTML = date.toLocaleTimeString();
@@ -83,6 +83,7 @@ setInterval(function () {
 
 
 ```javascript
+// We can use input type as guess also, inside a form
 
 let randomNumber = parseInt(Math.random() * 100 + 1);
 
