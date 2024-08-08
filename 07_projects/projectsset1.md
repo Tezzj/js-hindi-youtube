@@ -142,7 +142,7 @@ function checkGuess(guess) {
 }
 
 function displayGuess(guess) {
-  userInput.value = '';
+  userInput.value = '';                    // this is to clean the console after a guess, so that user can guess again
   guessSlot.innerHTML += `${guess}, `;
   numGuess++;
   remaining.innerHTML = `${11 - numGuess} `;
@@ -154,8 +154,8 @@ function displayMessage(message) {
 
 function endGame() {
   userInput.value = '';
-  userInput.setAttribute('disabled', '');
-  p.classList.add('button');
+  userInput.setAttribute('disabled', '');                 // so that the user cannot enter more values when the game ends
+  p.classList.add('button');                              //adds a class list to the element
   p.innerHTML = `<h2 id="newGame">Start new Game</h2>`;
   startOver.appendChild(p);
   playGame = false;
