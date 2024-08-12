@@ -16,11 +16,11 @@
     }
 
     
-
+   const intervalId = setInterval(sayDate, 1000, "hi")
          
 
     document.querySelector('#start').addEventListener('click', function(){
-        const intervalId = setInterval(sayDate, 1000, "hi")
+        setInterval(sayDate, 1000, "hi")
     })
 
     document.querySelector('#stop').addEventListener('click', function(){
