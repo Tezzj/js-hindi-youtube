@@ -9,7 +9,9 @@
     <h1>Chai aur code</h1>
     <button id="stop">Stop</button>
 </body>
+
 <script>
+    // Functions like setTimeout and setInterval are not a part of core js, but are available through the browser orthe other apis
     const sayHitesh = function(){
         console.log("Hitesh");
     }
@@ -17,10 +19,13 @@
         document.querySelector('h1').innerHTML = "best JS series"
     }
 
-    const changeMe = setTimeout(changeText, 2000)
+    // handler, callback, function are similar in their definition. Handler is also a callback function, or can be a reference to other function
+    const changeMe = setTimeout(changeText, 2000) //It will execute the function(only once) after the given time.
+
+    // setInterval is similar to setTimeout. It will repeat a function after a given time. 
 
     document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
+        clearTimeout(changeMe) // It will clear the setTimeout function
         console.log("STOPPED")
     })
 </script>
