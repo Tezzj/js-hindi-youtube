@@ -26,6 +26,7 @@
      // attachEvent()
     // jQuery - on
 
+     // IMPORTANT FOR INTERVIEW
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
@@ -39,6 +40,20 @@
     //     console.log("owl clicked");
     //     e.stopPropagation()
     // }, false)
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++IMPORTANT++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Event propagation in JavaScript refers to the order in which events are handled in the Document Object Model (DOM) when an event occurs on an element.
+    There are two main phases of event propagation:
+
+    1. Capturing Phase (Event Capturing)
+       The event starts from the root element and travels down the DOM tree to the target element (the element that triggered the event).
+       This phase is also known as the "trickling" phase.
+        By default, events are not handled during the capturing phase unless explicitly specified.
+        
+    2. Bubbling Phase (Event Bubbling)
+       After reaching the target element, the event bubbles up from the target element back to the root.
+       This is the default phase where most event handlers are triggered.
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
@@ -52,7 +67,7 @@
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
             let removeIt = e.target.parentNode
-            removeIt.remove()
+            removeIt.remove()                 // used to remove the selected node or element 
         }
     
         
