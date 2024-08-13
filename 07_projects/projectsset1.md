@@ -244,3 +244,30 @@ document.querySelector('#stop').addEventListener('click', stopChangingColor);
 
 
 ```
+
+
+```javascript
+//My solution
+
+let colorchange = function () {
+  console.log('hi');
+  let r = Math.floor(Math.random() * 255);
+  let g = Math.floor(Math.random() * 255);
+  let b = Math.floor(Math.random() * 255);
+  document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+};
+
+let change;
+
+document.querySelector('#start').addEventListener('click', () => {
+  if (!change) {             
+    change = setInterval(colorchange, 1000);
+  }
+});
+
+document.querySelector('#stop').addEventListener('click', function () {
+  clearInterval(change);
+  change = null;              // Required to prevent overwriting change values when the color changes. So we clear it, and put another random color in it
+});
+
+```
