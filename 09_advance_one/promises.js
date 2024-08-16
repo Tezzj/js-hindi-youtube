@@ -124,6 +124,14 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 /*
 The fetch function inherently returns a Promise that resolves with a Response object representing the HTTP response. This means
 you don’t need to create your own Promise to handle the result of the fetch call.
+
+A fetch() promise only rejects when a network error is encountered(usually due to permission issue or similar). A fetch() promise does not reject on http
+errors(like 404, etc). Instead, a then handler must check the response.ok or the response.status properties.
+
+fetch() will run at first because it has a priority queue. So, promise object will be returned at first, before all other async
+tasks(if time is similar for both fetch and other async functions)
+
+
 */
 .then((response) => {       //fetch will return a response object
     return response.json()
@@ -132,6 +140,7 @@ you don’t need to create your own Promise to handle the result of the fetch ca
     console.log(data);
 })
 .catch((error) => console.log(error))
+
 
 // promise.all
 // yes this is also available, kuch reading aap b kro.
