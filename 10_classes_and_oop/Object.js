@@ -17,7 +17,8 @@ function createUser(username, score){
     this.score = score
 }
 
-createUser.prototype.increment = function(){
+createUser.prototype.increment = function(){    // Ye usi function k prototype m add krega us property ko. It can't be used by any other function
+    
     this.score++        // 'this' means jis. It gives the current context of the function that calls it.
 }
 createUser.prototype.printMe = function(){       // we can add some properties defined by us in the prototype of the given thing.
