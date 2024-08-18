@@ -16,7 +16,7 @@ let heroPower = {
     }
 }
 
-Object.prototype.hitesh = function(){
+Object.prototype.hitesh = function(){                   // We can also insert user defined methods or properties in the global object prototype.
     console.log(`hitesh is present in all objects`);
 }
 
@@ -47,13 +47,12 @@ const TeachingSupport = {
 const TASupport = {
     makeAssignment: 'JS assignment',
     fullTime: true,
-    __proto__: TeachingSupport
-}
+    __proto__: TeachingSupport        // We can access the properties of another object by using __proto__ . It is called prototypal inheritance
 
-Teacher.__proto__ = User
+Teacher.__proto__ = User            
 
 // modern syntax
-Object.setPrototypeOf(TeachingSupport, Teacher)
+Object.setPrototypeOf(TeachingSupport, Teacher)    // TeachingSupport object inherits the properties of Teacher object
 
 let anotherUsername = "ChaiAurCode     "
 
