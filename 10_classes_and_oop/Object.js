@@ -20,7 +20,7 @@ function createUser(username, score){
 createUser.prototype.increment = function(){
     this.score++        // 'this' means jis. It gives the current context of the function that calls it.
 }
-createUser.prototype.printMe = function(){       // we can add some properties defined by us in the prototype of the object
+createUser.prototype.printMe = function(){       // we can add some properties defined by us in the prototype of the given thing.
     console.log(`price is ${this.score}`);
 }
 
