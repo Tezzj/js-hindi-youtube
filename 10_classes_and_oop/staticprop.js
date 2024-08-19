@@ -7,7 +7,7 @@ class User {
         console.log(`Username: ${this.username}`);
     }
 
-    static createId(){
+    static createId(){         // static property blocks the access of a method or a property, from the object that is inherited from that class
         return `123`
     }
 }
