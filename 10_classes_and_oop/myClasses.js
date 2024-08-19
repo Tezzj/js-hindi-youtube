@@ -1,6 +1,6 @@
 // ES6
 
-class User {
+class User {                                      // Class declaration
     constructor(username, email, password){
         this.username = username;
         this.email = email;
