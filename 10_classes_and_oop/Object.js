@@ -25,13 +25,13 @@ createUser.prototype.printMe = function(){       // we can add some properties d
     console.log(`price is ${this.score}`);
 }
 
- 
+// Here createUser will be a CONSTRUCTOR function, as it is used to construct instances of this function like chai and tea
 
-const chai = new createUser("chai", 25)
-const tea = createUser("tea", 250)
+const chai = new createUser("chai", 25)   
+const tea = new createUser("tea", 250)
 
 chai.printMe()     // If we use this without using new keyword, then it will give error that printMe is undefined. So we have to crate a new instance to transfer
-                   // the properyies to the variable(chai in this case)
+                   // the properties to the variable(chai in this case)
 
 
 /*
