@@ -25,7 +25,7 @@ Array.prototype.heyHitesh = function(){
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++IMPORTANT+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Prototype is not a property of array instances; it's a property of constructor functions (like Array, Object, or createUser).
+// Prototype is not a property of INSTANCES of array, obj. or functions; it's a property of constructor functions (like Array, Object, or createUser).
 
 The prototype property exists on functions because JavaScript uses it to implement inheritance. When you create an object using a constructor
 function with new, JavaScript sets up the new object's internal __proto__ link to the constructor function's prototype.
