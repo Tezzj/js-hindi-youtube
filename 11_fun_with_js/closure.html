@@ -39,16 +39,28 @@
     // console.log("TOO OUTER", username);
 
 
-    // function makeFunc() {
+    // function makeFunc() {    
     //     const name = "Mozilla";
     //     function displayName() {
     //         console.log(name);
     //     }
-    //     return displayName;
+    //     return displayName;       // displayName k reference k saath outer function ka scope bhi jayega(closure)
     // }
 
-    // const myFunc = makeFunc();
+// A closure is created when an inner function retains access to variables from its outer function’s scope, even after the outer function has finished executing.
+// In this case, displayName retains access to name (which has the value "Mozilla") because of the closure.    
+
+    // const myFunc = makeFunc();        //When makeFunc() is called, the function executes, creating a new execution context.The local variable name is created and initialized to "Mozilla".The inner function displayName is also defined within this context.
     // myFunc();
+
+
+        /*++++++++++++++++++++++++++++++++++++++++++++++++++++IMPORTANT++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        Lexical Scope of innerFunction:
+        innerVariable (local to innerFunction).
+        outerVariable (from the enclosing outerFunction).
+        Global Scope (if innerFunction needed to access global variables, it would look there).
+        
+        */
 
     </script>
     <script>
@@ -61,14 +73,17 @@
 
         function clickHandler(color){
             // document.body.style.backgroundColor = `${color}`
+            // If we do this, then the function will be directly executed without clicking the button, so we will return a function that will 
+            // be executed only after pressing the button.
 
             return function(){
                 document.body.style.backgroundColor = `${color}`
             }
         }
 
-        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('orange').onclick = clickHandler("orange")  
         document.getElementById('green').onclick = clickHandler("green")
+        
 
     </script>
 </html>
