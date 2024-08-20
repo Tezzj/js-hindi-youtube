@@ -32,6 +32,13 @@
         
         The bind(this) part is crucial: it binds the this value inside the handleClick method to the current instance of the React class.
         Without bind, this inside handleClick would refer to the button element when the event handler is called, not the class instance.
+
+
+
+        Before bind(this) is applied, when handleClick is used as an event handler, this inside the method would refer to the
+        DOM element (the button) that triggered the event.
+        
+        After applying bind(this), this inside handleClick refers to the instance of the React class.
         
         */
         
