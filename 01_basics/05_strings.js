@@ -46,8 +46,8 @@ The immutability of strings in JavaScript means that operations on strings alway
 console.log(gameName.charAt(2));
 console.log(gameName.indexOf('t'));
 
-const newString = gameName.substring(0, 4)
-console.log(newString);
+const newString = gameName.substring(0, 4) //It doesn’t change or overwrite the original string inside gameName, it returns a new string.
+console.log(newString);  
 
 const anotherString = gameName.slice(-8, 4) // ye string k end se slice krega due to - sign. It only happens in slice
 console.log(anotherString);
